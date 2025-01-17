@@ -6,6 +6,8 @@ import { Button } from "./ui/button";
 import { Moon, Sun } from "lucide-react";
 import Github from "./logos/GitHub";
 import pkg from "@/package.json";
+import Image from "next/image";
+import myImg from "../public/obenan.jpeg";
 
 export const Nav = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -33,10 +35,16 @@ export const Nav = () => {
       }
     >
       <div>
-        <HumeLogo className={"h-5 w-auto"} />
+        <Image
+          src={myImg} // Path to your image
+          alt="obenan"
+          style={{}}
+          width={40} // Width of the image
+          height={40} // Height of the image
+        />
       </div>
       <div className={"ml-auto flex items-center gap-1"}>
-        <Button
+        {/* <Button
           onClick={() => {
             window.open(pkg.homepage, "_blank", "noopener noreferrer");
           }}
@@ -47,7 +55,7 @@ export const Nav = () => {
             <Github className={"size-4"} />
           </span>
           <span>Star on GitHub</span>
-        </Button>
+        </Button> */}
         <Button
           onClick={toggleDark}
           variant={"ghost"}
