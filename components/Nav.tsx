@@ -7,7 +7,7 @@ import { Moon, Sun } from "lucide-react";
 import Github from "./logos/GitHub";
 import pkg from "@/package.json";
 import Image from "next/image";
-import myImg from "../public/obenan.jpeg";
+import myImg from "../public/obenan.png";
 
 export const Nav = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -39,8 +39,8 @@ export const Nav = () => {
           src={myImg} // Path to your image
           alt="obenan"
           style={{}}
-          width={40} // Width of the image
-          height={40} // Height of the image
+          width={80} // Width of the image
+          height={80} // Height of the image
         />
       </div>
       <div className={"ml-auto flex items-center gap-1"}>

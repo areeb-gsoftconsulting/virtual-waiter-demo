@@ -71,7 +71,7 @@ export default function Controls() {
                   stroke={"currentColor"}
                 />
               </span>
-              <span>End Call</span>
+              <span>End</span>
             </Button>
           </motion.div>
         ) : null}
