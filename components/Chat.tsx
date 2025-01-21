@@ -21,7 +21,7 @@ export default function ClientComponent({
       }
     >
       <VoiceProvider
-        configId="7156c36e-a72f-47d8-ad9b-48011f1331d2"
+        configId="269550b6-2751-4a43-8384-2145ba3898af"
         auth={{ type: "accessToken", value: accessToken }}
         onMessage={() => {
           if (timeout.current) {
